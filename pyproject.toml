@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asuli-review-bridge"
+version = "0.1.0"
+description = "Traceable multi-model advisory reviews with an offline-first mailbox"
+requires-python = ">=3.11"
+authors = [{name = "Ali Elmalı"}]
+
+[project.scripts]
+asuli-review = "asuli_review_bridge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
